@@ -3,7 +3,7 @@ RUN apt-get update  && apt-get install -y nginx
 RUN mkdir /app
 WORKDIR /app
 COPY . /app/
-ENV PORT 80
+ENV PORT 8888
 RUN mkdir /var/www/html/dist \
     && npm install \
     && npm run build \
