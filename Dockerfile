@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM 9.11.2-slim
 RUN apt-get update && apt-get install -y nginx
 RUN mkdir /app
 WORKDIR /app
